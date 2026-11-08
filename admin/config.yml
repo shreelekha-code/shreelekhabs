@@ -3,7 +3,7 @@
 # If Cloudflare gave your site a different address than shreelekhabs.pages.dev, change the three addresses too.
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/shreelekhabs
+  repo: shreelekha-code/shreelekhabs
   branch: main
   base_url: https://shreelekhabs.pages.dev
   auth_endpoint: api/auth
