@@ -1,22 +1,54 @@
 {
-  "name": "Shreelekha Basavaraja Sangapur",
-  "short": "Shreelekha B S",
-  "hero_title": "Hi, I’m Shreelekha.",
-  "intro": "I study the brain, move through yoga, dance and sport, photograph what I love, and travel whenever I can.",
-  "ask": "What brings you here?",
-  "email": "hello@example.com",
-  "instagram": "https://www.instagram.com/",
   "github": "https://github.com/",
-  "linkedin": "https://www.linkedin.com/",
+  "name": "Shreelekha Basavaraja Sangapur",
+  "intro": "I study the brain, move through yoga, dance and sport, photograph what I love, and travel whenever I can.",
   "sections": {
-    "mind": { "label": "Mind", "picker": "Ideas and research", "blurb": "Research, projects, writing, concept videos, courses and certificates.", "cta": "Enter Mind" },
-    "movement": { "label": "Movement", "picker": "Movement and rhythm", "blurb": "Yoga, dance and music, sport, and food, plus a breathing guide you can use right now.", "cta": "Enter Movement" },
-    "bahja": { "label": "Bahja", "picker": "Joy in pictures", "blurb": "Photo series and the stories behind each picture.", "cta": "Enter Bahja" },
-    "travel": { "label": "Travel", "picker": "Places to go", "blurb": "A map you can zoom into, with road trips, itineraries and places to visit.", "cta": "Open the map" }
+    "mind": {
+      "label": "Mind",
+      "picker": "Ideas and research",
+      "blurb": "Research, projects, writing, concept videos, courses and certificates.",
+      "cta": "Enter Mind"
+    },
+    "movement": {
+      "label": "Movement",
+      "picker": "Movement and rhythm",
+      "blurb": "Yoga, dance and music, sport, and food, plus a breathing guide you can use right now.",
+      "cta": "Enter Movement"
+    },
+    "bahja": {
+      "label": "Bahja",
+      "picker": "Joy in pictures",
+      "blurb": "Photo series and the stories behind each picture.",
+      "cta": "Enter Bahja"
+    },
+    "travel": {
+      "label": "Travel",
+      "picker": "Places to go",
+      "blurb": "A map you can zoom into, with road trips, itineraries and places to visit.",
+      "cta": "Open the map"
+    }
   },
+  "instagram": "https://www.instagram.com/",
+  "hero_title": "Hi, I’m Shreelekha",
   "now": [
-    { "heading": "Working on", "text": "PhD in computational neuroscience. Placeholder: one line on your research question.", "link": "/mind/" },
-    { "heading": "Latest writing", "text": "Placeholder post title that sums up your newest blog.", "link": "/mind/" },
-    { "heading": "Next trip", "text": "Placeholder: where you’re heading next.", "link": "/travel/" }
-  ]
+    {
+      "heading": "Working on",
+      "text": "PhD in computational neuroscience. Placeholder: one line on your research question.",
+      "link": "/mind/"
+    },
+    {
+      "heading": "Latest writing",
+      "text": "Placeholder post title that sums up your newest blog.",
+      "link": "/mind/"
+    },
+    {
+      "heading": "Next trip",
+      "text": "Placeholder: where you’re heading next.",
+      "link": "/travel/"
+    }
+  ],
+  "ask": "What brings you here?",
+  "short": "Shreelekha B S",
+  "email": "hello@example.com",
+  "linkedin": "https://www.linkedin.com/"
 }
