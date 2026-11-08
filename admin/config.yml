@@ -1,0 +1,277 @@
+# Content editor settings (Decap CMS).
+# IMPORTANT: replace YOUR-GITHUB-USERNAME below with your GitHub username.
+# If Cloudflare gave your site a different address than shreelekhabs.pages.dev, change the three addresses too.
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/shreelekhabs
+  branch: main
+  base_url: https://shreelekhabs.pages.dev
+  auth_endpoint: api/auth
+  commit_messages:
+    update: "Update {{collection}} “{{slug}}”"
+
+site_url: https://shreelekhabs.pages.dev
+display_url: https://shreelekhabs.pages.dev
+locale: en
+media_folder: images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: home
+    label: Home and site settings
+    editor: { preview: false }
+    files:
+      - name: site
+        label: Home page and site settings
+        file: content/site.json
+        fields:
+          - { label: Full name, name: name, widget: string }
+          - { label: Short name (shown on phones), name: short, widget: string }
+          - { label: Big greeting on the home page, name: hero_title, widget: string }
+          - { label: Intro sentence, name: intro, widget: text }
+          - { label: Picker question, name: ask, widget: string }
+          - { label: Email, name: email, widget: string, required: false }
+          - { label: Instagram link, name: instagram, widget: string, required: false }
+          - { label: GitHub link, name: github, widget: string, required: false }
+          - { label: LinkedIn link, name: linkedin, widget: string, required: false }
+          - label: Section names and descriptions
+            name: sections
+            widget: object
+            hint: Change the names here and they update across the whole site.
+            fields:
+              - label: Academic page
+                name: mind
+                widget: object
+                fields: &secfields
+                  - { label: Name, name: label, widget: string }
+                  - { label: Picker button text, name: picker, widget: string }
+                  - { label: Short description, name: blurb, widget: text }
+                  - { label: Button text, name: cta, widget: string }
+              - { label: Movement page, name: movement, widget: object, fields: *secfields }
+              - { label: Photography page, name: bahja, widget: object, fields: *secfields }
+              - { label: Travel page, name: travel, widget: object, fields: *secfields }
+          - label: Right now cards
+            name: now
+            widget: list
+            summary: "{{fields.heading}}"
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Link (for example /travel/), name: link, widget: string, required: false }
+
+  - name: pages
+    label: Pages
+    editor: { preview: false }
+    files:
+      - name: mind
+        label: Academic page (Mind)
+        file: content/mind.json
+        fields:
+          - { label: Intro, name: intro, widget: text }
+          - label: Current work
+            name: current
+            widget: object
+            fields:
+              - { label: Small heading, name: kicker, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: markdown }
+              - { label: Since, name: since, widget: string, required: false }
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Link text, name: link_label, widget: string, required: false }
+              - { label: Link address, name: link_url, widget: string, required: false }
+          - label: Journey
+            name: journey
+            widget: list
+            summary: "{{fields.year}}: {{fields.title}}"
+            fields:
+              - { label: Year, name: year, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Details, name: details, widget: markdown, required: false }
+          - label: Library (projects, writing, videos, courses, certificates)
+            name: library
+            widget: list
+            summary: "{{fields.type}}: {{fields.title}}"
+            fields:
+              - { label: Short id (letters and dashes, no spaces), name: id, widget: string, hint: "Used in the page address, for example my-first-post" }
+              - label: Type
+                name: type
+                widget: select
+                options: [{ label: Project, value: project }, { label: Writing, value: writing }, { label: Video, value: video }, { label: Course, value: course }, { label: Certificate, value: certificate }]
+              - { label: Title, name: title, widget: string }
+              - { label: Small detail (year, length), name: meta, widget: string, required: false }
+              - { label: Summary, name: summary, widget: text, required: false }
+              - { label: Cover image, name: image, widget: image, required: false }
+              - &tone
+                label: Cartoon to show if there’s no photo
+                name: tone
+                widget: select
+                required: false
+                default: sea
+                options:
+                  - { label: "Sea and sunrise", value: sea }
+                  - { label: "Green hills", value: hills }
+                  - { label: "Mountains", value: mountains }
+                  - { label: "Road with a car", value: road }
+                  - { label: "City at sunset", value: city }
+                  - { label: "Desk and book", value: desk }
+                  - { label: "Chart", value: chart }
+                  - { label: "Person", value: person }
+              - { label: External link (optional), name: link, widget: string, required: false }
+              - { label: YouTube link (optional), name: video_url, widget: string, required: false }
+              - { label: Full text (gives this item its own page), name: body, widget: markdown, required: false }
+
+      - name: movement
+        label: Movement page
+        file: content/movement.json
+        fields:
+          - { label: Intro, name: intro, widget: text }
+          - label: Practice tabs
+            name: strands
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { label: Tab name, name: label, widget: string }
+              - { label: Text, name: text, widget: markdown }
+              - { label: Tags, name: chips, widget: list, field: { label: Tag, name: chip, widget: string } }
+              - { label: Photos (first three are shown), name: photos, widget: list, field: { label: Photo, name: photo, widget: image } }
+              - *tone
+          - label: Certifications
+            name: certifications
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Detail, name: detail, widget: string, required: false }
+              - { label: Year, name: year, widget: string, required: false }
+          - label: Events
+            name: events
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Place, name: place, widget: string, required: false }
+              - { label: Date, name: date, widget: string, required: false }
+          - label: People I’ve learnt from
+            name: people
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: What they taught (shown under the name), name: role, widget: string }
+              - { label: What I learnt (back of the card), name: lesson, widget: text }
+              - { label: Photo, name: image, widget: image, required: false }
+          - label: Thoughts
+            name: thoughts
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Short id (letters and dashes), name: id, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Summary, name: summary, widget: string, required: false }
+              - { label: Full text, name: body, widget: markdown, required: false }
+          - label: Breathing guide
+            name: breathing
+            widget: object
+            fields:
+              - { label: Breathe in (seconds), name: inhale, widget: number, value_type: int, min: 1 }
+              - { label: Hold (seconds, 0 to skip), name: hold, widget: number, value_type: int, min: 0 }
+              - { label: Breathe out (seconds), name: exhale, widget: number, value_type: int, min: 1 }
+              - { label: Rounds, name: rounds, widget: number, value_type: int, min: 1 }
+
+      - name: bahja
+        label: Photography page (Bahja)
+        file: content/bahja.json
+        fields:
+          - { label: Word in Arabic script, name: arabic, widget: string, required: false }
+          - { label: Intro, name: intro, widget: text }
+          - label: Featured photo with stories
+            name: story
+            widget: object
+            fields:
+              - { label: Heading, name: title, widget: string }
+              - { label: Caption, name: caption, widget: markdown, required: false }
+              - { label: Photo, name: image, widget: image, required: false }
+              - *tone
+              - label: Story dots on the photo
+                name: hotspots
+                widget: list
+                summary: "{{fields.title}}"
+                hint: "Position is in percent: x 0 is the left edge, 100 the right; y 0 is the top, 100 the bottom."
+                fields:
+                  - { label: Across (x, 0 to 100), name: x, widget: number, value_type: int, min: 0, max: 100 }
+                  - { label: Down (y, 0 to 100), name: y, widget: number, value_type: int, min: 0, max: 100 }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+          - label: Photo series
+            name: series
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string, required: false }
+              - { label: Cover photo (optional, else the first photo), name: cover, widget: image, required: false }
+              - *tone
+              - label: Photos
+                name: photos
+                widget: list
+                summary: "{{fields.caption}}"
+                fields:
+                  - { label: Photo, name: image, widget: image }
+                  - { label: Caption, name: caption, widget: string, required: false }
+
+      - name: travel
+        label: Travel map and itineraries
+        file: content/travel.json
+        fields:
+          - { label: Intro, name: intro, widget: text }
+          - label: Places, road trips and itineraries
+            name: items
+            widget: list
+            summary: "{{fields.type}}: {{fields.name}}"
+            fields:
+              - { label: Short id (letters and dashes, no spaces), name: id, widget: string, hint: "Becomes the page address, for example /trip/?id=kanyakumari" }
+              - { label: Name, name: name, widget: string }
+              - label: Type
+                name: type
+                widget: select
+                default: place
+                options: [{ label: "Itinerary (a single place with a plan)", value: itinerary }, { label: "Road trip (several stops)", value: roadtrip }, { label: "Place to visit", value: place }]
+              - { label: Region button (for example South India), name: area, widget: string, required: false }
+              - { label: Where (for example Kerala, India), name: where, widget: string, required: false }
+              - { label: Latitude (not needed for road trips), name: lat, widget: number, value_type: float, required: false, default: 0, hint: "In Google Maps, right-click the place: the first number is latitude, the second is longitude." }
+              - { label: Longitude (not needed for road trips), name: lng, widget: number, value_type: float, required: false, default: 0 }
+              - label: Road trip stops (in order)
+                name: stops
+                widget: list
+                required: false
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: Stop name, name: name, widget: string }
+                  - { label: Latitude, name: lat, widget: number, value_type: float }
+                  - { label: Longitude, name: lng, widget: number, value_type: float }
+              - { label: Short description, name: blurb, widget: text }
+              - { label: Main photo, name: image, widget: image, required: false }
+              - *tone
+              - label: Quick facts
+                name: facts
+                widget: list
+                required: false
+                summary: "{{fields.label}}: {{fields.value}}"
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Value, name: value, widget: string }
+              - { label: Has its own itinerary page, name: has_page, widget: boolean, default: false }
+              - { label: "Itinerary page: one-line tagline", name: tagline, widget: string, required: false }
+              - { label: "Itinerary page: why go", name: intro, widget: markdown, required: false }
+              - label: "Itinerary page: day by day"
+                name: days
+                widget: list
+                required: false
+                summary: "{{fields.label}}: {{fields.title}}"
+                fields:
+                  - { label: Day label, name: label, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Details, name: details, widget: markdown }
+              - { label: "Itinerary page: nearby places", name: nearby, widget: list, required: false, field: { label: Place, name: place, widget: string } }
+              - { label: "Itinerary page: photos", name: photos, widget: list, required: false, field: { label: Photo, name: photo, widget: image } }
+              - { label: "Itinerary page: notes and tips", name: notes, widget: markdown, required: false }

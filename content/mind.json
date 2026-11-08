@@ -1,0 +1,26 @@
+{
+  "intro": "My academic path: research, projects, writing, videos that explain ideas, and what I’m learning next.",
+  "current": {
+    "kicker": "Current work",
+    "title": "PhD candidate, computational neuroscience",
+    "text": "Placeholder: two or three sentences on the question you’re trying to answer and why it matters, written for a curious non-specialist.",
+    "since": "Since September 2026",
+    "image": "",
+    "link_label": "",
+    "link_url": ""
+  },
+  "journey": [
+    { "year": "2026", "title": "PhD candidate, computational neuroscience", "details": "Placeholder: what you’re researching, who you work with, and what you hope to find." },
+    { "year": "Year", "title": "Master’s degree, field and university", "details": "Placeholder: thesis topic, key skills, a highlight or award." },
+    { "year": "Year", "title": "Research or work role", "details": "Placeholder: what you did there and what you took away from it." },
+    { "year": "Year", "title": "Bachelor’s degree, field and university", "details": "Placeholder: where it started and what pulled you toward research." }
+  ],
+  "library": [
+    { "id": "project-one", "type": "project", "title": "Project title one", "meta": "2026", "summary": "The problem, what you built, and the result.", "image": "", "tone": "chart", "link": "", "video_url": "", "body": "Placeholder: write about this project here. You can use **bold**, lists, links and images." },
+    { "id": "first-post", "type": "writing", "title": "A post explaining a concept from your field", "meta": "2026", "summary": "Placeholder summary in a sentence.", "image": "", "tone": "desk", "link": "", "video_url": "", "body": "Placeholder: your blog post goes here." },
+    { "id": "concept-video", "type": "video", "title": "A concept in five minutes", "meta": "6 min", "summary": "A short video walking through one idea.", "image": "", "tone": "city", "link": "", "video_url": "", "body": "Placeholder: paste a YouTube link in the video field and it appears above this text." },
+    { "id": "project-two", "type": "project", "title": "Project title two", "meta": "2025", "summary": "Includes a live demo visitors can try.", "image": "", "tone": "mountains", "link": "", "video_url": "", "body": "" },
+    { "id": "certificate-one", "type": "course", "title": "Certificate name", "meta": "2025", "summary": "Issuing organisation, with a link to verify.", "image": "", "tone": "desk", "link": "", "video_url": "", "body": "" },
+    { "id": "course-one", "type": "course", "title": "Course you completed", "meta": "2024", "summary": "Provider and what you learnt.", "image": "", "tone": "hills", "link": "", "video_url": "", "body": "" }
+  ]
+}

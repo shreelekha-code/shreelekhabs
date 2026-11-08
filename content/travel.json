@@ -1,0 +1,67 @@
+{
+  "intro": "Road trips, itineraries and places worth the journey. Zoom in, tap a pin, and open the full plan.",
+  "items": [
+    {
+      "id": "kanyakumari", "type": "itinerary", "name": "Kanyakumari", "area": "South India", "where": "Tamil Nadu, India",
+      "lat": 8.08, "lng": 77.54, "stops": [],
+      "blurb": "India’s southern tip, where three seas meet. Sunrise and sunset from the same shore.",
+      "image": "", "tone": "sea",
+      "facts": [{ "label": "Length", "value": "3 days" }, { "label": "Base", "value": "Kanyakumari town" }, { "label": "Getting there", "value": "Train or bus" }, { "label": "Best time", "value": "Placeholder" }],
+      "has_page": true,
+      "tagline": "Three days at India’s southern tip.",
+      "intro": "Placeholder: why you went, who you went with, and what made it special.",
+      "days": [
+        { "label": "Day 1", "title": "Sunrise at the shore", "details": "Watch the sunrise from the beach, walk the old town, and end with sunset at the viewpoint." },
+        { "label": "Day 2", "title": "Rock Memorial and the statue", "details": "Take the ferry to the Vivekananda Rock Memorial and the Thiruvalluvar Statue, then a slow afternoon by the sea." },
+        { "label": "Day 3", "title": "Nearby day trip", "details": "Visit Suchindram temple or Padmanabhapuram Palace before heading onward." }
+      ],
+      "nearby": ["Suchindram", "Padmanabhapuram Palace", "Vattakottai Fort"],
+      "photos": [],
+      "notes": "Placeholder: where you stayed, what to pack, and anything you wish you’d known."
+    },
+    {
+      "id": "kerala-coast", "type": "roadtrip", "name": "Kerala coast road", "area": "South India", "where": "Kerala to Tamil Nadu, India",
+      "lat": 0, "lng": 0,
+      "stops": [{ "name": "Kochi", "lat": 9.93, "lng": 76.27 }, { "name": "Alappuzha", "lat": 9.49, "lng": 76.33 }, { "name": "Varkala", "lat": 8.73, "lng": 76.71 }, { "name": "Kanyakumari", "lat": 8.08, "lng": 77.54 }],
+      "blurb": "Backwaters, cliffs and beaches, finishing at the southern tip.",
+      "image": "", "tone": "road",
+      "facts": [{ "label": "Length", "value": "4 days" }, { "label": "Distance", "value": "About 300 km" }, { "label": "Start", "value": "Kochi" }, { "label": "End", "value": "Kanyakumari" }],
+      "has_page": true,
+      "tagline": "Four days from Kochi to the southern tip.",
+      "intro": "Placeholder: how you travelled, what the roads were like, and your favourite stop.",
+      "days": [
+        { "label": "Day 1", "title": "Kochi", "details": "Fort Kochi on foot, the Chinese fishing nets, and sunset on the waterfront." },
+        { "label": "Day 2", "title": "Alappuzha", "details": "A day on the backwaters by houseboat or canoe." },
+        { "label": "Day 3", "title": "Varkala", "details": "Cliff-top cafés and the beach below." },
+        { "label": "Day 4", "title": "Kanyakumari", "details": "Drive south to the tip in time for sunset." }
+      ],
+      "nearby": ["Kollam", "Kovalam", "Thiruvananthapuram"],
+      "photos": [],
+      "notes": "Placeholder: road conditions, where you stopped to eat, and tips for the drive."
+    },
+    {
+      "id": "great-ocean-road", "type": "roadtrip", "name": "Great Ocean Road", "area": "Australia", "where": "Victoria, Australia",
+      "lat": 0, "lng": 0,
+      "stops": [{ "name": "Torquay", "lat": -38.33, "lng": 144.33 }, { "name": "Lorne", "lat": -38.54, "lng": 143.98 }, { "name": "Apollo Bay", "lat": -38.75, "lng": 143.67 }, { "name": "Twelve Apostles", "lat": -38.66, "lng": 143.10 }],
+      "blurb": "Surf towns, rainforest and limestone stacks along the southern coast.",
+      "image": "", "tone": "road",
+      "facts": [{ "label": "Length", "value": "3 days" }, { "label": "Distance", "value": "About 240 km" }, { "label": "Start", "value": "Torquay" }, { "label": "End", "value": "Twelve Apostles" }],
+      "has_page": true,
+      "tagline": "Three days along Victoria’s southern coast.",
+      "intro": "Placeholder: your car, your playlist, and the stretch you would drive again.",
+      "days": [
+        { "label": "Day 1", "title": "Torquay to Lorne", "details": "Surf beaches, then the coast drive to Lorne and a walk to Erskine Falls." },
+        { "label": "Day 2", "title": "Lorne to Apollo Bay", "details": "Lookouts along the cliffs, then rainforest walks in the Otways." },
+        { "label": "Day 3", "title": "The Twelve Apostles", "details": "Limestone stacks, Loch Ard Gorge, and sunset at the Apostles." }
+      ],
+      "nearby": ["Cape Otway Lightstation", "Erskine Falls", "Loch Ard Gorge"],
+      "photos": [],
+      "notes": "Placeholder: where you stayed and the best time of day for each stop."
+    },
+    { "id": "munnar", "type": "place", "name": "Munnar", "area": "South India", "where": "Kerala, India", "lat": 10.09, "lng": 77.06, "stops": [], "blurb": "Tea estates and misty hills in the Western Ghats.", "image": "", "tone": "hills", "facts": [], "has_page": false },
+    { "id": "madurai", "type": "place", "name": "Madurai", "area": "South India", "where": "Tamil Nadu, India", "lat": 9.93, "lng": 78.12, "stops": [], "blurb": "A temple city with lively night markets.", "image": "", "tone": "city", "facts": [], "has_page": false },
+    { "id": "hampi", "type": "place", "name": "Hampi", "area": "South India", "where": "Karnataka, India", "lat": 15.33, "lng": 76.46, "stops": [], "blurb": "Boulder landscapes and the ruins of Vijayanagara.", "image": "", "tone": "road", "facts": [], "has_page": false },
+    { "id": "sydney", "type": "place", "name": "Sydney", "area": "Australia", "where": "New South Wales, Australia", "lat": -33.87, "lng": 151.21, "stops": [], "blurb": "Harbour walks and coastal trails.", "image": "", "tone": "city", "facts": [], "has_page": false },
+    { "id": "blue-mountains", "type": "place", "name": "Blue Mountains", "area": "Australia", "where": "New South Wales, Australia", "lat": -33.71, "lng": 150.31, "stops": [], "blurb": "Cliff-top lookouts and bushwalks, a day trip from Sydney.", "image": "", "tone": "mountains", "facts": [], "has_page": false }
+  ]
+}

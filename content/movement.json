@@ -1,0 +1,30 @@
+{
+  "intro": "Yoga, dance and music, sport, and food. What I practise, what I teach, and the people who taught me.",
+  "strands": [
+    { "label": "Yoga", "text": "Placeholder: how you came to yoga, how you practise now, and what you teach.", "chips": ["Form one", "Form two", "Form three", "Pranayama"], "photos": [], "tone": "hills" },
+    { "label": "Dance and music", "text": "Placeholder: the dance styles you practise, how music shapes your movement, and ideas where yoga and dance meet.", "chips": ["Dance style", "Music you move to", "Yoga and dance ideas"], "photos": [], "tone": "city" },
+    { "label": "Sport", "text": "Placeholder: sports you played growing up and the ones you play now.", "chips": ["Sport played before", "Sport played now", "Teams and tournaments"], "photos": [], "tone": "hills" },
+    { "label": "Food and nutrition", "text": "Placeholder: your approach to food and nutrition, favourite simple meals, and eating around practice.", "chips": ["Simple recipes", "Notes on nutrition", "Eating around practice"], "photos": [], "tone": "desk" }
+  ],
+  "certifications": [
+    { "name": "Yoga teacher training", "detail": "School name, hours", "year": "Year" },
+    { "name": "Specialist course", "detail": "School name", "year": "Year" },
+    { "name": "Dance or sport qualification", "detail": "Organisation", "year": "Year" }
+  ],
+  "events": [
+    { "title": "Workshop or class you held", "place": "Place", "date": "Month year" },
+    { "title": "Community session", "place": "Place", "date": "Month year" },
+    { "title": "Performance or retreat", "place": "Place", "date": "Month year" }
+  ],
+  "people": [
+    { "name": "Teacher’s name", "role": "Yoga", "lesson": "Placeholder: the lesson that stayed with you.", "image": "" },
+    { "name": "Coach’s name", "role": "Sport", "lesson": "Placeholder: a habit they gave you.", "image": "" },
+    { "name": "Mentor’s name", "role": "Dance and music", "lesson": "Placeholder: how they changed the way you move.", "image": "" },
+    { "name": "Teacher’s name", "role": "Food and nutrition", "lesson": "Placeholder: an idea you still use every day.", "image": "" }
+  ],
+  "thoughts": [
+    { "id": "why-i-practise", "title": "A short essay on why you practise", "summary": "Placeholder summary", "body": "Placeholder: write your essay here." },
+    { "id": "a-common-question", "title": "Your view on a question people often ask you", "summary": "Placeholder summary", "body": "Placeholder: write your view here." }
+  ],
+  "breathing": { "inhale": 4, "hold": 2, "exhale": 6, "rounds": 5 }
+}

@@ -1,0 +1,22 @@
+{
+  "arabic": "بهجة",
+  "intro": "Arabic for joy and delight, the kind that lives in a good photograph.",
+  "story": {
+    "title": "The story behind the photo",
+    "caption": "Placeholder: a short caption for this photo.",
+    "image": "",
+    "tone": "sea",
+    "hotspots": [
+      { "x": 67, "y": 36, "title": "The moment", "text": "Placeholder: what was happening just before you pressed the shutter." },
+      { "x": 25, "y": 60, "title": "Camera settings", "text": "35mm, f/8, 1/500s, ISO 100. Placeholder numbers." },
+      { "x": 80, "y": 84, "title": "Getting there", "text": "Placeholder: how to reach this spot." }
+    ]
+  },
+  "series": [
+    { "title": "Coastlines", "subtitle": "Placeholder series", "cover": "", "tone": "sea", "photos": [] },
+    { "title": "Street life", "subtitle": "Placeholder series", "cover": "", "tone": "city", "photos": [] },
+    { "title": "Mountains", "subtitle": "Placeholder series", "cover": "", "tone": "mountains", "photos": [] },
+    { "title": "On the road", "subtitle": "Placeholder series", "cover": "", "tone": "road", "photos": [] },
+    { "title": "Quiet mornings", "subtitle": "Placeholder series", "cover": "", "tone": "hills", "photos": [] }
+  ]
+}
